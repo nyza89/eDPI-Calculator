@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset=utf-8 />
+
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="mouse.png">
+
+    <title>eDPI Calculator</title>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="header">
+            <h1>eDPI Calculator</h1>
+        </div>
+        <div class="calculator">
+            <form>
+                <input type="text" id="dpi" placeholder="DPI"><br>
+                <input type="text" id="sensitivity" placeholder="Ingame Sensitivity"><br>
+                <input type="button" onClick="getEdpi()" Value="Get eDPI">
+            </form>
+            <center>
+                <p>Your eDPI is<br>
+                    <span id="result"></span>
+                </p>
+            </center>
+        </div>
+        <p id="demo"></p>
+        <div class="description">
+            <h1>What is eDPI?</h1>
+            <p>Since gamers like to compare settings, gear, and so forth, and comparing raw sensitivity and DPI can get
+                confusing we use eDPI when comparing ‘true sensitivities.’ eDPI stands for effective Dots Per Inch, and
+                it’s calculated by multiplying the mouse DPI with the ingame sensitivity. This gives gamers a way of
+                comparing the true sensitivity of different players, regardless of their hardware or software settings.
+            </p>
+            <p>Made with ♥ by <a href="http://www.nyza.de" target="_blank">NYZA</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
